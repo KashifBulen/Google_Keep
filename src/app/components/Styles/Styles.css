@@ -141,10 +141,7 @@
   border-radius: 10px;
 }
 
-.note:hover{
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition:opacity 0.5s ease-in-out;
-}
+
 
 .note_icon {
   display: flex;
@@ -154,11 +151,11 @@
   opacity: 0;
 }
 
-/* .note,
+.note,
 .note_icon:hover {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-} */
+} 
 
 .note h2 {
   letter-spacing: 0.00625em;

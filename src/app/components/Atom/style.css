@@ -1,0 +1,173 @@
+
+
+
+
+.i-text{
+  color: #5f6368;
+  opacity: 1;
+align-items: center;
+       
+font-size: 25px;
+font-weight:500;
+display: inline-block;
+    font-family: "Product Sans",Arial,sans-serif;
+    font-size: 22px;
+   
+  
+    position: relative;
+   
+
+}
+
+
+
+
+.search-container {
+    display: flex;
+    background-color:#f1f3f4;
+    border-radius: 10px;
+    margin-top: 8px ;
+    
+  align-items: center;
+    width:620px;
+    height: 43px;
+    
+     overflow: hidden;
+    
+}
+
+.search-icon {
+  background-color:#f1f3f4;
+     display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.search-icon i {
+    font-size: 1.2rem;
+}
+
+.search-container input[type="text"] {
+  background-color:#f1f3f4; 
+     border: none;
+    outline: none;
+    margin: 0;
+    flex: 1;
+    font-weight:500;
+    padding:0px 0px;
+    font-size: 18px;
+
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+
+
+
+
+/* Navbar css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position:fixed;
+  width: 100%;
+  
+  border-bottom: 1px solid  rgba(0, 0, 0, 0.1);; 
+
+}
+
+.left-images{
+  display: flex;
+  align-items: center;
+}
+
+.left-images img{
+margin-left: 29px;
+
+}
+
+.try{
+  display: flex;
+  justify-content: space-around;  
+}
+
+
+
+.right-images{
+  display: flex;
+  align-items: center; 
+ gap:30px;
+ margin-right: 25px;
+}
+
+
+
+
+
+
+/*css for sidenav*/
+
+.sidenav_con{
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px; 
+  background-color: #ffffff;
+  
+}
+
+.left-icon{
+  display: flex;
+  justify-items: start;
+  padding:10px 10px 10px 25px;
+  align-items: center;
+  cursor: pointer;
+  color: #202124;
+}
+
+
+
+
+.left-icon p{
+  margin-left:20px;
+  display: none;
+  padding-right:90px;
+  letter-spacing: .01785714em;
+    font-family: "Google Sans",Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+  color: #202124;
+}
+
+
+.left-icon:hover{
+background-color: rgb(243, 243, 243);
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+width:100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

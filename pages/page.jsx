@@ -12,30 +12,28 @@ import Styles from '../pages/Styles.css'
 import { UserProvider } from '@/app/contexts/UserContext'
 
 
-function about({}) {
+function about() {
 
  
  
 
   return (
   
+<div>
+
+<UserProvider>
+<Header/>
+</UserProvider>
+
+<Sidenav/>
+<Main/>
 
 
-<>
+</div>
       
      
       
       
-      <UserProvider>
-      <Header/>
-      </UserProvider>
-      
-      <Sidenav/>
-      <Main/>
-     
-      </>
-
-   
   )
 }
 

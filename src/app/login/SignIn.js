@@ -11,7 +11,7 @@ const SignInForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const router =useRouter()
+  const router = useRouter()
   const handleSignIn = async (e) => {
     e.preventDefault();
 

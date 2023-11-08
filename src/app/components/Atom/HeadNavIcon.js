@@ -4,23 +4,21 @@
 import Image from "next/image";
 import Style from "../../components/Atom/style.css";
 import Styles from "../Styles/Styles.css";
-import Left_icons from "../Molecule/left_icons";
 
 import G_Text from "./G_Text";
 import Search_button from "./Search_button";
 
 //firbase files
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState,  } from "react";
 
 import { auth, db } from "../../login/firebase";
 
 import { useRouter } from "next/router";
 import { signOut } from "firebase/auth";
 
-import { doc, getDoc } from "firebase/firestore";
 
 import { useUser } from "../../contexts/UserContext";
-import Icon from '../Atom/icon';
+import Icon from './Icon'
 
 
 function Props_comp({ leftImages, rightImages }) {

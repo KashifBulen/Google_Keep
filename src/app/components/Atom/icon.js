@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import styles from './style.css'
 
-function icon() {
+function Icon () {
   return (
     <div>
       
@@ -14,10 +14,8 @@ function icon() {
       alt="Picture of the author"
     />  
 
-
-
     </div>
   )
 }
 
-export default icon
+export default Icon

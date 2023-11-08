@@ -1,93 +1,59 @@
- 
-
 .flex-container {
   box-sizing: border-box;
- 
-  display: flex;
-justify-content: space-around;
-height:50px;
- }
 
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
 
 .flex-container1 {
   display: flex;
   flex-direction: row;
-  
- 
-
-  
 }
 
-
-.i-con{
+.i-con {
   display: flex;
   align-items: center;
 }
 
-
-
-
 .flex-item-sidenav1 {
+  margin-top: 11px;
 
-  margin-top: 10px;
-  
-  height:100%;
-  
+  height: 100%;
+
   position: fixed;
   background-color: #fff;
-
 }
 
-.flex-item-sidenav1:hover{
-    box-shadow: 0px 1px 3px rgb(156, 156, 156);
+.flex-item-sidenav1:hover {
+  box-shadow: 0px 1px 3px rgb(156, 156, 156);
 }
 
-.flex-item-sidenav1:hover p{
-  display:flex;
-}￼
-
-
-.flex-item-sidenav2 {
- 
+.flex-item-sidenav1:hover p {
+  display: flex;
+}
+￼ .flex-item-sidenav2 {
   background-color: #fff;
   padding: 18px 0px;
-  margin:0px 0px;
+  margin: 0px 0px;
   flex: 21%;
   padding-bottom: 29%;
- 
-
- 
 }
-
-
 
 .flex-item-main {
   background-color: #fffffffd;
- 
-  margin:0px 0px;
+
+  margin: 0px 0px;
   flex: 30%;
   min-height: 570px;
- max-height: auto;
-  
- 
-  
+  max-height: auto;
 }
 
 .flex-item-left {
-  
   background-color: #fffffffd;
 
   flex: 100%;
-  
- 
- 
-  
- 
-  
 }
-
-
-
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
@@ -96,46 +62,38 @@ height:50px;
   }
 }
 
-
 /* Styles.css */
 
 .Ncontainer {
   display: grid;
   align-items: center;
   padding: 50px;
-  padding-left:6%;
+  padding-left: 6%;
 }
 
 .noteCard {
- 
   background-color: #ffffff;
   border-radius: 10px;
   border: 2px solid #7e7d7d4d;
-  box-shadow: 0px 0px 8px  rgba(0.1, 0.1, 0.1, 0.1);
+  box-shadow: 0px 0px 8px rgba(0.1, 0.1, 0.1, 0.1);
   padding: 10px;
   max-width: 570px;
   width: 100%;
   margin-bottom: 20px;
-  
-
-  
 }
-
 
 .noteTitle {
   width: 100%;
-  
+
   border: none;
   word-wrap: break-word;
   outline: none;
-  
-  font-family: "Google Sans"Arial,sans-serif;
+
+  font-family: "Google Sans" Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-
 }
-
 
 .noteContent {
   width: 100%;
@@ -144,14 +102,12 @@ height:50px;
   resize: none;
   word-wrap: break-word;
   margin-top: 10px;
-  font-family: Arial,sans-serif;
-  font-size: .875rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
   padding: 20px 0px 20px 0px;
 
-
   box-sizing: border-box;
-  
 }
 
 .Bottom_icon {
@@ -159,99 +115,86 @@ height:50px;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
- 
 }
 
 .text_close {
-  font-family: "Google Sans",Arial,sans-serif;
+  font-family: "Google Sans", Arial, sans-serif;
   cursor: pointer;
-  margin-right: 20px;;
-  font-size: .875rem;
+  margin-right: 20px;
+  font-size: 0.875rem;
   font-weight: 500;
-  color: rgba(0,0,0,.87)
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .notesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
-  
-  
-
- 
 }
 
 .note {
-
   background-color: #ffffff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   height: max-content;
   border-radius: 10px;
-  
-
 }
 
-/* .note:hover{
+.note:hover{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition:opacity 0.5s ease-in-out;
+}
+
+.note_icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  opacity: 0;
+}
+
+/* .note,
+.note_icon:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 } */
 
-
-.note_icon{
-display:flex;
-justify-content: space-around;
-align-items: center;
-margin-top: 30px;
-opacity:0;
+.note h2 {
+  letter-spacing: 0.00625em;
+  font-family: "Google Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.note p {
+  max-height: auto;
 
-.note,.note_icon:hover{
-  opacity: 1;
-  transition:opacity 0.5s ease-in-out;
-  }
+  word-wrap: break-word;
+  padding-top: 12px;
+  /* Allow vertical resizing */
+  overflow: hidden;
+  padding-bottom: 20px;
 
-.note h2{
-
-  letter-spacing: .00625em;
-    font-family: "Google Sans",Arial,sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    padding-top: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-     text-overflow: ellipsis;
-}
-
-.note p{
-max-height: auto;
-  
-    word-wrap: break-word;
-    padding-top: 12px;
-    /* Allow vertical resizing */
-    overflow: hidden;
-  padding-bottom:20px;
-
-  letter-spacing: .01428571em;
-  font-family: Arial,sans-serif;
-  font-size: .875rem;
+  letter-spacing: 0.01428571em;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
-
 }
 
-.icons_bottom{
+.icons_bottom {
   display: flex;
   gap: 20px;
   justify-content: space-between;
 
   cursor: pointer;
-  
 }
-
 
 /*dropdown css*/
 .container {
@@ -259,7 +202,6 @@ max-height: auto;
   flex-direction: column;
   align-items: center;
 }
-
 
 /*modal */
 /* Styles.css */
@@ -285,17 +227,11 @@ max-height: auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   width: 400px;
   height: max-content;
- 
-
-
- 
-
-
 }
 
 .modal-title {
-  letter-spacing: .00625em;
-  font-family: "Google Sans",Arial,sans-serif;
+  letter-spacing: 0.00625em;
+  font-family: "Google Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -307,13 +243,11 @@ max-height: auto;
   border: none;
 }
 
-.modal-Content{
-  
+.modal-Content {
   max-height: auto;
-  
-  
-  letter-spacing: .00625em;
-  font-family: "Google Sans",Arial,sans-serif;
+
+  letter-spacing: 0.00625em;
+  font-family: "Google Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   word-wrap: break-word;
@@ -322,9 +256,7 @@ max-height: auto;
   padding-bottom: 20px;
   width: 100%;
   border: none;
-  
 }
-
 
 .closeButton {
   cursor: pointer;
@@ -343,20 +275,15 @@ max-height: auto;
   border-radius: 4px;
 }
 
-
-
-
-
-
 /* Sign Up form */
 
-.form-con{
-  display:flex;
+.form-con {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container-form input{
+.container-form input {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -366,14 +293,15 @@ max-height: auto;
 }
 
 /* Add a background color when the inputs get focus */
-.container-form input[type=text]:focus, input[type=password]:focus {
+.container-form input[type="text"]:focus,
+input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 /* Set a style for all buttons */
 .container-form button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -384,7 +312,7 @@ max-height: auto;
 }
 
 .container-form button:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 /* Extra styles for the cancel button */
@@ -394,14 +322,14 @@ max-height: auto;
 }
 
 /* Float cancel and signup buttons and add an equal width */
- .cancelbtn, .signupbtn {
+.cancelbtn,
+.signupbtn {
   float: left;
   width: 50%;
 }
 
 /* Add padding to container elements */
 .container-form {
-  
   padding: 20px 40px 20px 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -411,13 +339,12 @@ max-height: auto;
 
 /* The Modal (background) */
 
-
 /* Style the horizontal ruler */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
- 
+
 /* The Close Button (x) */
 .close {
   position: absolute;
@@ -443,14 +370,13 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
   }
 }
 
-
 /*for admin css*/
-
 
 .admin-panel {
   width: 80%;
@@ -473,7 +399,6 @@ hr {
 
 /*hhhhhhh*/
 
-
 /* styles.module.css */
 .lastImage:hover {
   /* Add your hover styling for the last image here */
@@ -491,69 +416,37 @@ hr {
   position: absolute;
   top: 100%;
   right: 0; /* Set the dropdown to the right side of the image */
-  transform: translateX(10%); /* Move the dropdown to the left to align with the image */
+  transform: translateX(
+    10%
+  ); /* Move the dropdown to the left to align with the image */
   background: white;
   border: 1px solid #ccc;
   padding: 10px;
 }
 
-.dropdown ul li{
+.dropdown ul li {
   list-style-type: none;
-  
 }
 
 .image-container:hover .dropdown {
   display: block;
 }
 
-
-.logout-btn{
-  background-color: #04AA6D;
+.logout-btn {
+  background-color: #04aa6d;
   color: #ddd;
   border-radius: 5px;
 }
 
-
-
-
-
-
 /*try notes card*/
 
-.card-try{
+.card-try {
   display: grid;
-  
+
   justify-items: center;
 }
 
-
-
-
-
-.del-img:hover{
-background-color: #c0cabc5e;
+.del-img:hover {
+  background-color: #c0cabc5e;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

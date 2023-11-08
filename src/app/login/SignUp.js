@@ -4,8 +4,6 @@ import {auth, db} from './firebase'; // Import your Firebase configuration
 import Styles from '../components/Styles/Styles.css'; // Import your CSS module
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { useRouter } from 'next/router';
-// import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-// import { storage } from "./firebase"; // Import your Firebase Storage configuration
 
 
 import {doc, setDoc } from "firebase/firestore";
@@ -62,54 +60,6 @@ const SignUpForm = () => {
       console.error(error.message);
     }
   };
-
-  // const handleSignUp = async (e) => {
-  //   e.preventDefault();
-  
-  //   try {
-  //     if (password === passwordRepeat) {
-  //       // Upload the profile picture to Firebase Storage
-  //       if (profilePicture) {
-  //         const storageRef = ref(storage, `profilePictures/${user.uid}`);
-  //         const uploadTask = uploadBytes(storageRef, profilePicture);
-  
-  //         // Wait for the upload to complete and get the download URL
-  //         const snapshot = await getDownloadURL(uploadTask.snapshot.ref);
-  //         const profilePictureUrl = snapshot;
-  
-  //         // Add the profile picture URL to the user data
-  //         userData.profilePicture = profilePictureUrl;
-  //       }
-  
-  //       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-  //       const user = userCredential.user;
-  
-  //       // Create a user document in Firestore
-  //       const userDocRef = doc(db, "users", user.uid);
-  //       const userData = {
-          
-  //         firstName,
-  //         lastName,
-  //         email,
-  //         password,
-  //         role: "user",
-  //         // Add more user-specific data as needed
-  //       };
-  
-  //       await setDoc(userDocRef, userData);
-  //       console.log("User document created in Firestore");
-  
-  //       console.log(firstName, lastName);
-  //       alert("Success");
-  //       router.push('page');
-  //     } else {
-  //       console.error('Passwords do not match.');
-  //     }
-  //   } catch (error) {
-  //     console.error(error.message);
-  //   }
-  // };
-
 
 
 

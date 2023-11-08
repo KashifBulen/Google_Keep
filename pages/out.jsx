@@ -1,16 +1,13 @@
-import SignUpForm from '../src/app/login/SignUp'
+import SignUpForm from "../src/app/login/SignUp";
 
-import React from 'react'
-
+import React from "react";
 
 function about() {
-  
   return (
     <div>
-
-      <SignUpForm/>
+      <SignUpForm />
     </div>
-  )
+  );
 }
 
-export default about
+export default about;

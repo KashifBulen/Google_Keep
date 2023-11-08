@@ -9,17 +9,15 @@ import G_Text from "./G_Text";
 import Search_button from "./Search_button";
 
 //firbase files
-import React, { useState,  } from "react";
+import React, { useState } from "react";
 
 import { auth, db } from "../../login/firebase";
 
 import { useRouter } from "next/router";
 import { signOut } from "firebase/auth";
 
-
 import { useUser } from "../../contexts/UserContext";
-import Icon from './Icon'
-
+import Icon from "./Icon";
 
 function Props_comp({ leftImages, rightImages }) {
   //  const [userDisplayName, setUserName] = useState("");
@@ -34,8 +32,6 @@ function Props_comp({ leftImages, rightImages }) {
   console.log(display);
 
   const router = useRouter();
-
-
 
   const handleLogout = () => {
     signOut(auth)
@@ -65,7 +61,7 @@ function Props_comp({ leftImages, rightImages }) {
         ))}
         <div className="try">
           <Icon />
-      
+
           <G_Text />
         </div>
       </div>
@@ -92,7 +88,8 @@ function Props_comp({ leftImages, rightImages }) {
                     <h5>Role: {Role} </h5>
                   </li>
                   <li>
-                    <p>{display}</p></li>
+                    <p>{display}</p>
+                  </li>
                   <li>
                     <p>{userEmail}</p>
                   </li>

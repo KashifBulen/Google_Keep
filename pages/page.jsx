@@ -12,7 +12,6 @@ function about() {
       <UserProvider>
         <Header />
       </UserProvider>
-
       <Sidenav />
       <Main />
     </div>

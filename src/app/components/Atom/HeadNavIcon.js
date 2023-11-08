@@ -17,7 +17,7 @@ import { useRouter } from "next/router";
 import { signOut } from "firebase/auth";
 
 import { useUser } from "../../contexts/UserContext";
-import Icon from "./Icon";
+import Icon from "./GIcon";
 
 function Props_comp({ leftImages, rightImages }) {
   //  const [userDisplayName, setUserName] = useState("");

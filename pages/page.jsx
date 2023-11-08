@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Header from "../src/app/components/Organisms/header";
 import Sidenav from "../src/app/components/Organisms/Sidenav";
